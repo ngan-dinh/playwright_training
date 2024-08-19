@@ -51,6 +51,12 @@ export default defineConfig({
       },
       dependencies: ['setup']
     },
+    {
+      name: 'laptop',
+      use:{
+        ...devices['Desktop Chrome'],
+      }
+    }
    
   ],
 
