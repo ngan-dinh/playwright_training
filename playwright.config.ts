@@ -37,12 +37,12 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     //setup
-    {
-      name: 'setup',
-      testMatch:/.*\.setup\.ts/,
-    },
-    {
-      testDir: './tests/TC04_Authen',
+    // {
+    //   name: 'setup',
+    //   testMatch:/.*\.setup\.ts/,
+    // },
+   /* {
+      /*testDir: './tests/TC04_Authen',
       name: 'functional',
       use: {
         browserName: 'firefox',
@@ -50,13 +50,15 @@ export default defineConfig({
         storageState: './auth/login.json'
       },
       dependencies: ['setup']
-    },
+    },*/
+   
     {
       name: 'laptop',
-      use:{
-        ...devices['Desktop Chrome'],
-      }
+      // use:{
+      //   ...devices['Desktop Chrome'],
+      // }
     }
+
    
   ],
 
